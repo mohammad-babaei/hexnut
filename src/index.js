@@ -3,6 +3,8 @@ const uuid = require('uuid/v4');
 const config = require('./config');
 const createCtx = require('./ctx');
 const { SOCKET_SYMBOL } = require('./symbols');
+const cookie = require('cookie')
+const crypto = require('crypto')
 
 /**
  * @typedef {function(ctx, NextMiddlewareFn)} middleware
